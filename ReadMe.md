@@ -43,12 +43,14 @@
 Як СУБД в рішенні використано MySQL.
 
 Перед запуском проекту слід:
-1. Створити в MySQL схему під назвою equations;
-2. У файлі ***flyway.conf*** замінити "*user*" та "*password*" на власні. Файл flyway.conf розміщений в корені проекту.
-3. У файлі ***context.xml*** замінити "*username*" та "*password*" на власні.
+1. Як Deployment ***directory*** зазначити ***MathChecker/src/main/webapp***. Context path "/".
+2. Проект виконано в *Java 17*, відповідно, для запуску необхний *Tomcat 10*.
+3. Створити в MySQL схему під назвою equations;
+4. У файлі ***flyway.conf*** замінити "*user*" та "*password*" на власні. Файл flyway.conf розміщений в корені проекту.
+5. У файлі ***context.xml*** замінити "*username*" та "*password*" на власні.
     Файл знаходиться: ***MathChecker\src\main\webapp\META-INF***
-4. Запустити процедуру міграції дадих в БД: ***Maven - mathchecker\Plugings\flyway\flyway:migrate***
-5. Для запису логів у файл замінити директорію ***D:/Courses/TestWorks/*** на власну у файлі ***log4j2.properties*** 
+6. Запустити процедуру міграції дадих в БД: ***Maven - mathchecker\Plugings\flyway\flyway:migrate***
+7. Для запису логів у файл замінити директорію ***D:/Courses/TestWorks/*** на власну у файлі ***log4j2.properties*** 
    (файл знаходиться: ***MathChecker\src\main\resources***)
 
 Примітки:
